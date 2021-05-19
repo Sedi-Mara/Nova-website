@@ -1,0 +1,458 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Century Gothic;
+}
+
+.Head1{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../back2.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+ul{
+  float: right;
+  list-style-type: none;
+  margin-top: 25px;
+}
+
+ul li{
+  display: inline-block;
+}
+
+ul li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 20px;
+  border: 1px solid transparent;
+  transition: 0.6s ease;
+}
+
+ul li a:hover{
+  background-color: #fff;
+  color: #338080;
+}
+
+.Head2{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../back3.jpg);
+  height: 120vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.centre{
+  position: absolute;
+  left: 45%;
+  top: 15%;
+  color: #fff;
+  font-size: 25px;
+}
+
+.Head3{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../phone.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.logo img{
+  float: left;
+  width: 150px;
+  height: auto;
+  margin-top: 10px;
+  position: absolute;
+  left: 5%;
+  z-index: 1;
+
+}
+.main{
+  width: 100%;
+  margin: auto;
+}
+
+ul li.active a{
+  background-color: #fff;
+  color: #338080;
+}
+
+.mainPro{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to right, #32a893,#0762b8  )
+}
+
+.title{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.title h1{
+  color: #fff;
+  font-size: 40px;
+
+
+}
+
+.information{
+  width: 800px;
+  height: 1000px;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%);
+}
+
+#circle{
+  width: 1000px;
+  height: 1000px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  transform: rotate(0deg);
+  transition: 1s;
+}
+
+.overlay{
+
+  width: 0;
+  height: 0;
+  border-top: 500px solid#fff;
+  border-right: 500px solid transparent;
+  border-bottom: 500px solid #fff;
+  border-left: 500px solid #fff;
+  left: 0;
+  top: 0;
+}
+
+.feature img{
+  width: 70px;
+}
+
+.feature div{
+  margin-left: 30px;
+}
+
+.feature div p{
+  margin-top: 10px;
+}
+
+.feature{
+  position: absolute;
+  display: flex;
+  color: #fff;
+}
+
+
+.one{
+  top: 450px;
+  right: 50px;
+
+}
+.two{
+  top: 150px;
+  left: 350px;
+  transform: rotate(-90deg);
+}
+.three{
+  bottom: 450px;
+  left: 50px;
+  transform: rotate(-180deg);
+}
+.four{
+  bottom: 150px;
+  right: 350px;
+  transform: rotate(-270deg);
+}
+.PC{
+  width: 250px;
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.controls{
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.controls h3{
+  margin: 15px 0;
+  color: #fff;
+
+}
+#upButton{
+  width: 15px;
+  cursor: pointer;
+}
+
+#downButton{
+  width: 15px;
+  cursor: pointer;
+  transform: rotate(180deg);
+}
+
+.button{
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.btn{
+  border: 1px solid #fff;
+  padding: 10px 30px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn:hover{
+  background-color: #fff;
+  color: #338080;
+  transition: 0.6s ease;
+}
+
+@keyframes transitionIn {
+  from{
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+
+  to{
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+
+body{
+  animation: transitionIn 1s;
+}
+
+.conHead{
+
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 20%;
+  left: 50%;
+  color: #fff;
+  font-size: 25px;
+}
+
+.Left{
+  color: #fff;
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  width: 35%
+}
+
+.right{
+  color: #fff;
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  width: 35%;
+}
+
+.form{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+
+input{
+  width: 100%;
+  margin: 20px 0;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  border-bottom: 1px solid #fff;
+
+
+}
+
+button{
+  padding: 10px;
+  font-size: 15px;
+  background: #fff;
+  border: none;
+  border-radius: 6px;
+  margin-top: 30px;
+  color:  #338080;
+}
+
+.button2{
+  position: absolute;
+  top: 125%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.btn2{
+  border: 1px solid #fff;
+  padding: 10px 30px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.btn2:hover{
+  background-color: #fff;
+  color: #338080;
+  transition: 0.6s ease;
+}
+
+::-webkit-input-placeholder{
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width:700px) {
+  .main{
+    width: 100%;
+  }
+
+  .logo img{
+
+    visibility: hidden;
+
+  }
+
+  ul{
+    margin-top: 20px;
+    float: none;
+    list-style-type: none;
+    margin-top: 25px;
+    text-align: center;
+  }
+
+  .Left{
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    align-self: center;
+    overflow: scroll;
+
+  }
+
+  .right{
+    color: #fff;
+    text-align: left;
+    width: 100%;
+    align-self: center;
+overflow: scroll;
+    position: absolute;
+    left: 5px;
+
+  }
+
+
+
+  .btn2{
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    display: inline-block;
+  }
+
+  ul li.active a{
+    background-color: #fff;
+    color: #338080;
+  }
+
+  ul li a{
+    text-decoration: none;
+    color: red;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+  }
+
+  ul li a:hover{
+    background-color: #fff;
+    color: #0762b8;
+  }
+
+  .conHead{
+
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 20%;
+    left: 50%;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+  }
+
+  .mainPro{
+    margin: auto;
+    height: 120vh;
+  }
+
+  .one{
+    top: 350px;
+    left: 220px;
+    transform: rotate(0deg);
+
+  }
+  .two{
+    top: 200px;
+    left: 220px;
+    transform: rotate(0deg);
+  }
+  .three{
+    bottom: 400px;
+    left: 220px;
+    transform: rotate(0deg);
+
+  }
+  .four{
+    bottom: 250px;
+    left: 220px;
+    transform: rotate(0deg);
+
+  }
+  .PC{
+    width: 200px;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+
+  .overlay{
+
+    width: 0;
+    height: 0;
+    border-top: 500px solid transparent;
+    border-right: 500px solid transparent;
+    border-bottom: 500px solid transparent;
+    border-left: 500px solid transparent;
+    left: 0;
+    top: 0;
+  }
+
+  .controls{
+    visibility: hidden;
+  }
+
+
+
+}

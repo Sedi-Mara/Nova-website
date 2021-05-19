@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>NOVA BUSINESS TECHNOLOGY PROFILE</title>
+    <link rel="stylesheet" type="text/css" href="css/Style.css">
+  </head>
+  <body>
+    <header >
+
+      <div class="mainPro">
+        <div class="logo">
+        <img src="Logo.png" alt="">
+        </div>
+        <div class="Navigation">
+          <nav>
+          <ul>
+            <li ><a href="Nova.html">Home</a></li>
+
+            <li><a href="About.html">About</a></li>
+              <li class="active"><a href="Products.html"> Our Products </a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <div class="information">
+          <div class="overlay">
+
+          </div>
+          <img src="img/PC.png" class="PC">
+          <div id="circle">
+            <div class="feature one">
+              <img src="img/CPU.png" alt="">
+              <div>
+                <h1>CPU</h1>
+                <p>Core i9 4.80 GHz </p>
+              </div>
+            </div>
+            <div class="feature two">
+              <img src="img/RAM.png" alt="">
+              <div>
+                <h1>RAM</h1>
+                <p>16GB DDR4 3200 MHz</p>
+              </div>
+            </div>
+            <div class="feature three">
+              <img src="img/SSD.png" alt="">
+              <div>
+                <h1>SSD</h1>
+                <p>1TB PCIe Gen4 NVMe </p>
+              </div>
+            </div>
+            <div class="feature four">
+              <img src="img/GPU.png" alt="">
+              <div>
+                <h1>GPU</h1>
+                <p>GTX 1080 Core Clock: 1607 MHz</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="controls">
+          <img src="img/Arrow.png" id="upButton">
+          <h3>Features</h3>
+          <img src="img/Arrow.png" id="downButton">
+        </div>
+        </div>
+
+      <!-- javascript -->
+      <script type="text/javascript">
+        var circle = document.getElementById("circle");
+        var upButton = document.getElementById("upButton");
+        var downButton = document.getElementById("downButton")
+
+        var rotateValue = circle.style.transform;
+        var rotateSum;
+
+        upButton.onclick = function(){
+          rotateSum = rotateValue + "rotate(-90deg)"
+          circle.style.transform = rotateSum;
+          rotateValue = rotateSum;
+        }
+
+        downButton.onclick = function(){
+          rotateSum = rotateValue + "rotate(90deg)"
+          circle.style.transform = rotateSum;
+          rotateValue = rotateSum;
+        }
+      </script>
+
+        </body>
+        </html>
